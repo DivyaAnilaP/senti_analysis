@@ -1,0 +1,86 @@
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #f8cdda, #1d2b64); /* Gradient background */
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* Heading style */
+h1 {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Textarea styling */
+textarea {
+    font-size: 16px;
+    padding: 10px;
+    width: 80%;
+    max-width: 600px;
+    height: 150px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 20px;
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    resize: none;
+    transition: all 0.3s ease;
+}
+
+textarea:focus {
+    border: 2px solid #ff6347; /* Focused border color */
+    box-shadow: 0 0 10px rgba(255, 99, 71, 0.5);
+}
+
+/* Button styling */
+button {
+    background-color: #ff6347; /* Button color */
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #ff4500; /* Button hover color */
+    transform: translateY(-5px); /* Hover effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Prediction text styling */
+h3 {
+    font-size: 24px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Add a footer for extra aesthetic */
+footer {
+    font-size: 14px;
+    margin-top: 30px;
+    color: #ccc;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    textarea {
+        width: 90%;
+    }
+
+    button {
+        width: 80%;
+    }
+}
