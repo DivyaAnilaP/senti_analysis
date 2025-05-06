@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tweet Sentiment Analysis</title>
+</head>
+<body>
+    <h1>Sentiment Analysis for Tweets</h1>
+    <form action="/predict" method="POST">
+        <label for="tweet">Enter a Tweet:</label>
+        <input type="text" id="tweet" name="tweet" required>
+        <button type="submit">Analyze Sentiment</button>
+    </form>
+
+    {% if prediction %}
+        <h2>Prediction: {{ prediction }}</h2>
+    {% endif %}
+
+    {% if accuracy is not none %}
+        <h3>Model Accuracy: {{ accuracy }}</h3>
+    {% endif %}
+</body>
+</html>
